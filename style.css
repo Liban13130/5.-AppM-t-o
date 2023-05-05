@@ -10,7 +10,136 @@ body {
   padding: 0 10px;
 }
 
-.block-meteo{
+main{
+  max-width: 375px;
+  min-height: 380px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px 10px;
+  color: #212121;
+  background-color: #f1f1f1;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  text-align: center;
+}
+
+.loader-container{
+  background-color: #f1f1f1;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 
+  visibility 0.4s ease-out,
+  opacity 0.4s ease-out;
+}
+
+.loader-container.active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.city-name{
+  font-family: Lato, sans-serif;
+  font-size: 50px;
+  color: #333;
+}
+
+.country-name{
+  font-size: 24px;
+  margin-bottom: 45px;
+  color: #606060;
+}
+
+.temperature{
+  font-family: Lato, sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  color: #212121;
+}
+
+.info-icon-container{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.info-icon{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .block-meteo{
   text-align: center;
   max-width: 400px;
   margin: 100px auto;
@@ -22,18 +151,41 @@ body {
   font-weight: 400;
   font-size: 3.5em;
   padding-top: 30px;
-  color: rgb(105, 105, 105);
+  color: #333333
 }
 
 .block-meteo p:nth-child(2){
-  color: rgb(71, 68, 68);
+  color: #656361;
 }
 .block-meteo p:nth-child(3){
-  margin: 50px 0 0 0;
+  margin: 50px 0px 0px 0px;
   font-size: 4em;
+  color: #212121;
   font-weight: 500;
 }
 
 .block-meteo img{
-  height: 150px;
+  width: 150px;
 }
+
+button{
+  font-family: Lato, sans-serif;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  min-width: 120px;
+  border-radius: 10px;
+  border: none;
+  color: #1e48aa;
+  background-color: #f1f1f1;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 5px 5px rgba(121, 115, 115, 0.986);
+  text-transform: uppercase;
+} */
